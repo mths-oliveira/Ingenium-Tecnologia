@@ -1,0 +1,19 @@
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding-left: 140px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.main {
+    width: 100%;
+    height: fit-content;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        padding: 0px;
+        padding-top: 60px;
+    }
+}

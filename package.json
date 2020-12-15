@@ -1,0 +1,26 @@
+{
+  "name": "ingenium-tecnologia",
+  "version": "1.0.0",
+  "description": "Automação predial BMS, Segurança eletrônica, Automação prisional, Tecnologia da informação TI, Elétrica, Serralheria e Mecatrônica. Integração total entre consultoria, projetos, execução e manutenção. Com grande foco em implantação e upgrade de tecnologias e Retrofit.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -w",
+    "compile": "node-sass src/sass/index.scss public/assets/css/style.comp.css",
+    "compress": "node-sass public/assets/css/style.prefix.css public/assets/css/style.css --output-style compressed"
+  },
+  "author": "Matheus Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "node-sass": "^5.0.0",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "core-js": "^3.8.0",
+    "regenerator-runtime": "^0.13.7"
+  }
+}
