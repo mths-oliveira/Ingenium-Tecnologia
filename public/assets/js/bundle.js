@@ -232,7 +232,6 @@ function createTouchListener(callBackFunction) {
   touchListener.moveTouch = function (event) {
     moveTouch(event);
     notifyAll(event);
-    event.preventDefault();
   };
 
   function moveTouch(event) {
@@ -261,7 +260,7 @@ function createTouchListener(callBackFunction) {
     touchListener.state.diffY = touchListener.state.diffY < 0 ? touchListener.state.diffY * -1 : touchListener.state.diffY;
   }
 
-  function parseDirection() {
+  function parseDirection(event) {
     if (touchListener.state.diffX > touchListener.state.diffY) {
       touchListener.state.swipedX === 'left' ? callBackFunction('left') : callBackFunction('right');
     }
